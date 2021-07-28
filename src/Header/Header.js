@@ -1,10 +1,10 @@
 import "./Header.css";
 import {
   Navbar,
-  Nav,
   Form,
   FormControl,
   Button,
+  Badge
 } from "react-bootstrap";
 import logo from "../assets/images/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,7 +16,6 @@ export const Header = () => {
       <Navbar.Brand href="#">
         <img src={logo} className="logo" alt="logo" />
       </Navbar.Brand>
-      <FontAwesomeIcon icon={faShoppingBasket} />
       <Form className="d-flex">
         <FormControl
           type="search"
@@ -26,6 +25,10 @@ export const Header = () => {
         />
         <Button variant="outline-success">Search</Button>
       </Form>
+      <FontAwesomeIcon className="header-basket-icon" icon={faShoppingBasket} />
+      <Badge className="header-basket-badge" bg="secondary">9</Badge>
+      <span className="header-basket-price d-flex">565,00 kr</span>
+      <Button className="header-checkout-button" variant="outline-danger">Check out</Button>
     </Navbar>
   );
 };

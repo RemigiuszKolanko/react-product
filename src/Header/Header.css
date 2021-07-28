@@ -1,3 +1,29 @@
 .logo {
     width: 25%;
 }
+
+.header-basket-icon {
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+.header-basket-badge {
+    margin-right: 2rem;
+    position: relative;
+    top: -0.4rem;
+    left: -0.3rem;
+    white-space: nowrap;
+}
+
+.header-basket-price {
+    display: flex;
+    flex-wrap: nowrap;
+    display: block;
+    font-weight: 1rem;
+    white-space: nowrap;
+}
+
+.header-checkout-button {
+    white-space: nowrap;
+    margin: 0 2rem;
+}
