@@ -15,7 +15,6 @@ import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
 
 export const Header = () => {
   return (
-    <>
       <Navbar className="d-block" bg="light" expand="lg">
         <Row>
           <Col xs={3} className="d-xs-block d-md-none">
@@ -58,7 +57,6 @@ export const Header = () => {
             </Button>
           </Col>
         </Row>
-
         <Row>
           <Col>
             <Navbar.Collapse id="basic-navbar-nav">
@@ -77,6 +75,5 @@ export const Header = () => {
           </Col>
         </Row>
       </Navbar>
-    </>
   );
 };
