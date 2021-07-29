@@ -5,6 +5,7 @@ import { Header } from "./Header/Header";
 import { Footer } from "./Footer/Footer";
 import { Row, Col } from "react-bootstrap";
 import { Sidebar } from "./Sidebar/Sidebar";
+import { ProductPage } from "./Pages/ProductPage/ProductPage";
 
 const sidebarMenu = [
   "Paper clips",
@@ -28,6 +29,12 @@ const sidebarMenu = [
   "Armoire desks",
 ];
 
+const paperProduct = {
+  name: "Paper",
+  extraPrice: "565,00",
+  standardPrice: "670",
+};
+
 function App() {
   return (
     <Container>
@@ -36,7 +43,9 @@ function App() {
         <Col className="d-none d-md-block" md="4">
           <Sidebar sidebarMenu={sidebarMenu} />
         </Col>
-        <Col xs="12" md="8">Prooduct page</Col>
+        <Col xs="12" md="8">
+          <ProductPage product={paperProduct} />
+        </Col>
       </Row>
       <Footer />
     </Container>
